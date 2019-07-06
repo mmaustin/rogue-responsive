@@ -12,15 +12,17 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 	font-size: 1em;
 }
 
 .container{
 	max-width: 1200px;
-	margin: 0 auto;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -52,25 +54,30 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
-	border-bottom: 3px solid #77a466;
+	width: 100%;
+	/*height: 110px;*/
+	/*border-bottom: 3px solid #77a466;*/
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 header h1 {
-	float: left;
+	/*float: left;*/
+	text-align: center;
 	margin: 0;
+	width: 100%;
 	padding: 38px 0;
+	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
+	/*float: right;*/
 	padding: 46px 0;
 }
 header nav ul {
@@ -82,7 +89,9 @@ header nav ul li {
 	font-weight: 700;
 	font-size: .875em;
 	padding: 0 10px;
-	display: inline;
+	/*display: inline;*/
+	list-style: none;
+	line-height: 50px;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -97,6 +106,7 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 .main-image {
@@ -105,6 +115,7 @@ header nav ul li a{
 }
 .main-image img {
 	width: 100%;
+	border-top: 3px solid #77a466;
 	border-bottom: 3px solid #77a466;
 }
 
@@ -126,7 +137,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	float: left;
 	border-top: 1px solid #eee;
@@ -136,14 +147,14 @@ header nav ul li a{
 	padding: 10px 0;
 }
 
-.section-two {
+/*.section-two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
-}
+}*/
 
 .section-two h4,
 .section-three h4 {
-	padding: 10px 30px;
+	padding: 10px 0;
 }
 
 .menu {
@@ -159,27 +170,41 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: 21px;
+	padding: 0;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+	padding: 0;
 }
 
 /*The widths are in a percentage!*/
 footer {
 	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
+	width: 90%;
+	/*margin: 0 auto;
+	clear: both;*/
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
+}
+
+@media all and (min-width: 768px) {
+
+
+}
+
+@media all and (min-width: 1200px) {
+
+
 }
